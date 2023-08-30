@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手順</title>
+</head>
+<body>
+    <h1>web server構築</h1>
+    <h2>1.インスタンスの作成</h2>
+    <p>AWSacademyからインスタンスの作成をする。</p>
+    <p>http通信をするのでポートを開けておく</p>
+    <p>SSHでログインするので鍵を作成する。</p>
+    <br>
+    <h2>2.docker インストール</h2>
+    <p>Docker Composeをインストールする</p>
+    <p>インストールできたかバージョンを確認する</p>
+    <br>
+    <h2>3.nginxを動かす</h2>
+    <p>webサーバーを動かす設定ファイルを作成する</p>
+    <p>ディレクトリを作り配信するファイルを作る</p>
+    <br>
+    <h2>4.PHPを動かす</h2>
+    <p>PHPを動かすためにcompose.ymlとnginxの設定ファイルにコンテナを起動させるコードを書く</p>
+    <p>php-fpmとnginxを連携する</p>
+    <br>
+    <h2>5.MySQLを動かす</h2>
+    <p>compose.ymlにMySQLを動かせるように追記する</p>
+    <p>「docker compose exec 対象コンテナ名 コンテナ内で実行したいコマンド」でSQLを起動できる</p>
+    <br>
+    <h2>6.画像アップロードできるようにする</h2>
+    <p>compose.ymlに画像をアップロードできるように記述する</p>
+    <p>画像のサイズを5MBまで制限できるようにする</p>
+</body>
+</html>
